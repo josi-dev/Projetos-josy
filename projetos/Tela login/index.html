@@ -9,7 +9,7 @@
 <body>
     
     
-        <form method="post" action="./info.php">
+        <form method="post" action="./info.php" target="resultado">
             
              <label>Nome:</label>
         <input type="text" name="nome">
@@ -20,13 +20,13 @@
         
         
         <button type="submit">Enviar</button>
-            <p><?php include(./info.php);  
+            <iframe name="resultado"><?php include(./info.php);  
             if ($resultado) {
     echo("enviado");
 } else {
     echo("mensagem interceptada");
 };
-            ?></p>
+            ?></iframe>
         </form>
        
 
