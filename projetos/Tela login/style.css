@@ -1,0 +1,127 @@
+
+
+@media screen and (orientation: portrait){
+    
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDSh6euHnUnJdwl-2kqNJ2OJ1YhNZDdqwfPw&usqp=CAU');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 90vh;
+      display: grid;
+      align-items: center;
+      font-family: arial;
+    }
+
+    form {
+      border: 2px solid green;
+      height: 60vh;
+      border-radius: 10px;
+      padding: 0 2vh 0 2vh;
+      margin: 0 2vh 0 2vh;
+      background: transparent;
+      backdrop-filter: blur(15px);
+    }
+      
+    input {
+        width: 100%;
+        display: block;
+        height: 5vh;
+        border-radius: 10px;
+        border: 2px solid gray;
+        background-color: gainsboro;
+        margin-top: 3vh;
+        font-size: 4vw;
+    }
+      
+    button {
+        width: 30vh;
+        height: 6vh;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        margin-top: 8vh;
+        font-size: 5vw;
+        border: 2px solid gray;
+        background-color: gainsboro;
+    }
+    
+    label {
+        display: block;
+        font-size: 5vw;
+        
+        margin-top: 2vh;
+    }
+    
+    p {
+        text-align: center;
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+@media screen and (orientation: landscape){
+    
+    body {
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzbYWGnsLYCfm_TFsC-EhCaZ2NEPpeNun8kQ&usqp=CAU'); 
+        background-size: cover;
+        background-attachment: fixed;
+        display: grid;
+        justify-content: center;
+        font-family: arial;
+    }
+    
+    form {
+        width: 90vh;
+        height: 115vh;
+        border: 2px solid green;
+        border-radius: 8px;
+        backdrop-filter: blur(15px);
+        padding: 0 0 0 4vh;
+    }
+    
+    input {
+        display: block;
+        width: 90%;
+        height: 7vh;
+        border-radius: 8px;
+        border: 2px solid gray;
+        margin-top: 5vh;
+        font-size: 4vh;
+    }
+    
+    label {
+        display: block;
+        margin-top: 3vh;
+        font-size: 5vh;
+    }
+    
+    button {
+        height: 9vh;
+        width: 40vh;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10vh;
+        border-radius: 8px;
+        border: 2px solid gray;
+        font-size: 5vh;
+    }
+    
+    p {
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+}
+
