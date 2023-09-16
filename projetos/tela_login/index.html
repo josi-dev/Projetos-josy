@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    
+    
+        <form method="post" action="./info.php" target="resultado">
+            
+             <label>Nome:</label>
+        <input type="text" name="nome">
+        
+        <label>Senha:</label>
+        <div id="boxSenha">
+            <input type="number" name="senha" id="senha" inputmode="numeric">
+            <img src="https://cdn-icons-png.flaticon.com/512/4281/4281111.png" alt="" id="vizu">
+        </div>
+        
+        <!--<small>verificar cadastro</small>-->
+        
+        
+        <button type="submit">Enviar</button>
+            <iframe name="resultado"><?php include(./info.php);  
+            if ($resultado) {
+    echo("enviado");
+} else {
+    echo("mensagem interceptada");
+};
+            ?></iframe>
+        </form>
+       
+
+    
+</body>
+<script>
+    
+    let vizualizar = document.getElementById("vizu")
+    let input = document.getElementById("senha")
+    
+    vizualizar.addEventListener("click", () => {
+        
+        if(input.type == "number") {
+         
+         input.setAttribute("type","password")
+        }else {
+           
+         input.setAttribute("type","number")
+         }
+        
+        
+    })
+    
+    
+    
+    
+</script>
+</html>
